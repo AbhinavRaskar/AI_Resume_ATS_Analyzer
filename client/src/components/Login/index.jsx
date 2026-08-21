@@ -22,7 +22,7 @@ const Login = () => {
     setLoading(true)
     setError("")
 
-    const url = "http://localhost:5000/auth/login";
+    const url = `${import.meta.env.VITE_API_URL}/auth/login`;
     const userDetails = {
       email,
       password
